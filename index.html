@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My test site</title>
-  </head>
-  <body>
-    <h1>test!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeroen Vileyn - Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/css/screen.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Jeroen Vileyn</h1>
+        <p id="typing"></p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a cybersecurity student passionate about protecting systems and understanding how
+            vulnerabilities can be exploited. I enjoy ethical hacking, network security, and learning
+            about the latest security technologies.
+        </p>
+    </section>
+
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Linux & Bash</li>
+            <li>Python Scripting</li>
+            <li>Penetration Testing</li>
+            <li>Wireshark & Packet Analysis</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="card">
+        <h2>Projects</h2>
+        <p><strong>Python toolkit:</strong> During the classing of Scripting And Code Analysis in Semester 2 of my studies, we learned everything about python. In this course I made a python toolkit for Ethical Hackers with web scrapers, DDOS attacker scripts, password generators, XSS testers and more!</p>
+        <p><strong>Capture the Flag:</strong></p>
+    </section>
+
+    <section id="badges" class="card">
+        <h2>Badges</h2>
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3665303" style='border:none;width:100%;'></iframe>
+    </section>
+
+    <footer>
+        <div style="display:flex; justify-content:center; gap:1.5rem; margin-bottom:0.5rem;">
+            <a href="mailto:vileynjeroen717@gmail.com">
+                <img src="https://img.icons8.com/ios-glyphs/30/8b949e/new-post.png" alt="Email"/>
+            </a>
+            <a href="https://linkedin.com/in/johndoe" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/30/8b949e/linkedin.png" alt="LinkedIn"/>
+            </a>
+            <div class="thm-card">
+            </div>
+        </div>
+        © 2025 John Doe - Cybersecurity Portfolio
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const text = "2nd year Cybersecurity Student @ Howest";
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById("typing").textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 60);
+            }
+        }
+        type();
+    </script>
+</body>
 </html>
