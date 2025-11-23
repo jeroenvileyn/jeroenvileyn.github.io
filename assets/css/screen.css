@@ -1,0 +1,91 @@
+/* Main styling for Cybersecurity Portfolio */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0d1117, #111b2b);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #58a6ff33;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #58a6ff;
+    text-shadow: 0 0 10px #58a6ff55;
+}
+
+#typing {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: .5rem;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #e6edf3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.card {
+    background: #161b22;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #30363d;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
+
+footer img {
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+footer img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    background: #238636;
+    padding: 0.7rem 1.2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #2ea043;
+}
