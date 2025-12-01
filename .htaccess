@@ -1,0 +1,2 @@
+RewriteRule ^coins$ api/coins/index.php [L]
+RewriteRule ^coins/(.*)$ api/coins/index.php [L]
